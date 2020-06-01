@@ -90,6 +90,11 @@ a {
 
 .hinfo-link:hover .hinfo__envelope{
   fill: var(--secondery-color);
+
+}
+
+.hinfo-link:focus .hinfo__envelope{
+  fill: var(--secondery-color);
 }
 
 .hinfo__smartphone{
@@ -101,6 +106,9 @@ a {
 }
 
 .hinfo-link:hover .hinfo__smartphone{
+  fill: var(--secondery-color);
+}
+.hinfo-link:focus .hinfo__smartphone{
   fill: var(--secondery-color);
 }
 
@@ -462,7 +470,8 @@ color: var(--text-color);
 }
 
 
-.about-link:hover{
+.about-link:hover,
+.about-link:focus{
   background-color: var(--secondery-color);
 }
 
@@ -638,6 +647,11 @@ letter-spacing: 0.03em;
 .tmlink-link:hover .team__svg{
   fill: var(--white-color);
 }
+
+.tmlink-link:focus .team__svg{
+  fill: var(--white-color);
+}
+
 /*Client*/
 .client h2 {
   margin-bottom: 50px;
@@ -653,20 +667,21 @@ letter-spacing: 0.03em;
   display: flex;
   align-items: center;
 }
-.client-link {
+.client-item {
   width: 175px;
   height: 90px;
   margin-right: 30px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
 
   border: 1px solid var(--border-color);
 }
+.client-item:last-child{
+  margin-right: 0;
+}
 
-.client-link:hover,
-.client-link:focus {
+.client-item:hover,
+.client-item:focus {
   border: 1px solid var(--secondery-color);
 }
 
@@ -676,9 +691,25 @@ letter-spacing: 0.03em;
   fill: var(--border-color);
 }
 
-.client-link:hover .client__svg{
+.client__link{
+  display: block;
+  width: 175px;
+  height: 90px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 65px;
+}
+
+.client__link:hover .client__svg{
   fill:var(--secondery-color);
 }
+
+ .client__link:focus .client__svg{
+  fill:var(--secondery-color);
+}
+
+
+
 
 /*Button*/
 .btnpadding{
